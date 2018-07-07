@@ -1,3 +1,19 @@
 body {
 	background-color: skyblue;
 }
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(4,1fr); /* best to use fr*/
+	grid-gap: 1em;
+}
+
+
+.wrapper > div {
+	background: #eee;
+	padding: 1em;
+}
+
+.wrapper > div:nth-child(odd) {
+	background: #ddd;
+}
