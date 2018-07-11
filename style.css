@@ -54,7 +54,14 @@ body {
 }
 
 
+#ecran {
+	position: absolute;
+	border: 1px solid black;
 
+	top: 100px;
+	left: 200px;
+
+}
 
 
 /* Mobile */
