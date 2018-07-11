@@ -14,7 +14,7 @@
 		<div class="section">Projects</div>
 		<div class="section">Blog</div>
 		<div class="section">Contact</div>
-		<div id='ecran'>Screen Width:</div>
+		<div id='ecran'></div>
 	</div>
 	<div class='col2'></div>
 
@@ -35,11 +35,11 @@
 	
 var ecran = document.getElementById('ecran');
 
-ecran.innerHTML = "Screen width: "+window.screen.width+" px<br>"+"window width "+window.innerWidth+" px";
+ecran.innerHTML = "Screen: "+window.screen.width+" px<br>"+"Window: "+window.innerWidth+" px";
 
 window.onresize = function() {
 	ecran.innerHTML = "Screen width: "+window.screen.width+" px<br>"+"window width "+window.innerWidth+" px";
-	
+
 }
 </script>
 
