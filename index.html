@@ -35,12 +35,13 @@
 	
 var ecran = document.getElementById('ecran');
 
-ecran.innerHTML = "Screen: "+window.screen.width+" px<br>"+"Window: "+window.innerWidth+" px";
+ecran.innerHTML = "Scr W: "+window.screen.width+" px<br>"+"Win W "+window.innerWidth+" px<br>Scr H: "+window.screen.height+" px<br>Win H: "+window.innerHeight+" px";
 
 window.onresize = function() {
-	ecran.innerHTML = "Screen width: "+window.screen.width+" px<br>"+"window width "+window.innerWidth+" px";
+	ecran.innerHTML = "Scr W: "+window.screen.width+" px<br>"+"Win W "+window.innerWidth+" px<br>Scr H: "+window.screen.height+" px<br>Win H: "+window.innerHeight+" px";
 
 }
+
 </script>
 
 </html>
