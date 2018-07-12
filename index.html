@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Michel Adant</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
@@ -35,12 +37,27 @@
 	
 var ecran = document.getElementById('ecran');
 
-ecran.innerHTML = "Scr W: "+window.screen.width+" px<br>"+"Win W "+window.innerWidth+" px<br>Scr H: "+window.screen.height+" px<br>Win H: "+window.innerHeight+" px";
+//ecran.innerHTML = "Scr W: "+window.screen.width+" px<br>"+"Win W "+window.innerWidth+" px<br>Scr H: "+window.screen.height+" px<br>Win H: "+window.innerHeight+" px";
 
-window.onresize = function() {
-	ecran.innerHTML = "Scr W: "+window.screen.width+" px<br>"+"Win W "+window.innerWidth+" px<br>Scr H: "+window.screen.height+" px<br>Win H: "+window.innerHeight+" px";
+
+
+
+
+
+var calcScreen = function() {
+	ecran.innerHTML = 
+	"Scr W: "+window.screen.width+
+	" px<br>"+"Win W "+window.innerWidth+
+	" px<br>Scr H: "+window.screen.height+
+	" px<br>Win H: "+window.innerHeight+" px";
 
 }
+
+calcScreen();
+
+window.onresize = function() {
+	calcScreen();
+};
 
 </script>
 
