@@ -67,3 +67,38 @@ body {
 	}
 
 }
+
+@media only screen and (min-width:769px) {
+
+	.navbar {
+		position: fixed;
+		background-color: white;
+		/*grid-column: 1/2;*/
+		height: 100%;
+		width: 20%;
+
+	}
+
+	.navbar .section {
+		font-size: 24px;
+		margin-top: 10px;
+		padding: 10px;
+		background-color: #eeeeee;
+	}
+
+	.navbar .section:hover {
+		color: grey;
+	}
+
+
+	.col2 {
+		position: absolute;
+		width: 80%;
+		right: 0%;
+		background-color: yellow;
+		height: 5000px;
+	}
+
+}
+
+
