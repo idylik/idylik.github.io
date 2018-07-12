@@ -54,12 +54,16 @@ body {
 
 	.col2 {
 		position: absolute;
-		top: 30px;
+		top: 90px;
 		width: 100%;
 		background-color: pink;
 		height: 5000px;
 		border: 1px solid red;
 
+	}
+
+	#ecran {
+		border: 1px solid black;
 	}
 
 }
