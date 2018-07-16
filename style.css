@@ -30,22 +30,22 @@ body {
 @media only screen and (max-width: 768px) {
 	.navbar {
 		position: fixed;
-		background-color: darkgrey;
 		height: 30px;
 		width: 100%;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		z-index: 10;
+		grid-gap: 3px;
 	}
 
 	.navbar .section {
 		font-size: 20px;
 		margin-top: 0px;
 		background-color: #eeeeee;
-		border: 1px solid black;
 		text-align: center;
 		height: 100%;
 		line-height: 30px;
+
 	}
 
 	.navbar .section:hover {
@@ -56,15 +56,14 @@ body {
 		position: absolute;
 		top: 30px;
 		width: 100%;
-		background-color: pink;
+		background-color: white;
 		height: 5000px;
-		border: 1px solid red;
 
 	}
 
-	#ecran {
+	/*#ecran {
 		border: 1px solid black;
-	}
+	}*/
 
 }
 
@@ -95,10 +94,16 @@ body {
 		position: absolute;
 		width: 80%;
 		right: 0%;
-		background-color: yellow;
+		background-color: white;
 		height: 5000px;
 	}
 
 }
 
 
+#description {
+
+	position: absolute;
+	color: red;
+	background-color: orange;
+}

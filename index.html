@@ -12,14 +12,15 @@
 	
 <div class="wrapper">
 	<div class='navbar'>
-		<div class="section">About</div>
-		<div class="section">Projects</div>
-		<div class="section">Blog</div>
-		<div class="section">Contact</div>
+		<div class="section" onclick="loadContent('about')">About</div>
+		<div class="section" onclick="loadContent('projects')">Projects</div>
+		<div class="section" onclick="loadContent('blog')">Blog</div>
+		<div class="section" onclick="loadContent('contact')">Contact</div>
 		
 	</div>
 	<div class='col2'>
-		<div id='ecran'></div>
+		<!--<div id='ecran'></div> -->
+
 	</div>
 
 
@@ -36,7 +37,7 @@
 
 
 <script>
-	
+/*	
 var ecran = document.getElementById('ecran');
 
 var calcScreen = function() {
@@ -54,6 +55,31 @@ calcScreen();
 window.onresize = function() {
 	calcScreen();
 };
+*/
+
+var col2 = document.getElementsByClassName('col2')[0];
+console.log(col2);
+
+
+//Fonction qui load le contenu dans .col2
+function loadContent(content) {
+	var file = content+".html";
+	//col2.innerHTML = '<object type="text/html" data="'+content+'.html"></object>';
+	var requete = new XMLHttpRequest();
+	requete.open ('GET', file, true);
+	requete.responseType = 'arraybuffer';
+	requete.onreadystatechange = function () {
+		if (requete.readyState == 4 && requete.readyState == 200) {
+			if (requete.responseText) {
+				col2.innerHTML = requete.responseText;
+			}
+		}
+	}
+	requete.send();
+
+}
+
+
 
 </script>
 
