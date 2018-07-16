@@ -71,6 +71,7 @@ function loadContent(content) {
 	requete.onreadystatechange = function () {
 		if (requete.readyState == 4 && requete.readyState == 200) {
 			if (requete.responseText) {
+				console.log(responseText);
 				col2.innerHTML = requete.responseText;
 			}
 		}
