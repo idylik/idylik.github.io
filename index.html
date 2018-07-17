@@ -67,7 +67,8 @@ function loadContent(content) {
 	//col2.innerHTML = '<object type="text/html" data="'+content+'.html"></object>';
 	var requete = new XMLHttpRequest();
 	requete.open ('GET', file, true);
-	requete.responseType = 'arraybuffer';
+	requete.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    requete.overrideMimeType("application/json");
 	requete.onreadystatechange = function () {
 		console.log("load content... "+file);
 		if (requete.readyState == 4 && requete.readyState == 200) {
