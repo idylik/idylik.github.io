@@ -71,9 +71,11 @@ function loadContent(content) {
     requete.overrideMimeType("application/json");
 	requete.onreadystatechange = function () {
 		console.log("load content... "+file);
-		if (requete.readyState == 4 && requete.readyState == 200) {
+		if (requete.readyState == 4 && requete.status == 200) {
+			console.log("readyState: "+requete.readyState);
+			console.log("status: "+requete.status);
 			if (requete.responseText) {
-				console.log(responseText);
+				console.log(requete.responseText);
 				col2.innerHTML = requete.responseText;
 			}
 		}
