@@ -110,6 +110,8 @@ body {
 	font-size: 20px;
 	width: 80%;
 	height: auto;
+	display: block;
+	margin: auto;
 	top: 0;
 	right: 0;
 	bottom: 0;
