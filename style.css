@@ -116,4 +116,6 @@ body {
 	top: 10%;
 	right: 0;
 	left: 0;
+	text-align: justify;
+    text-justify: inter-word;
 }
