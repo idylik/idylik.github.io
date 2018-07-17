@@ -18,7 +18,7 @@
 		<div class="section" onclick="loadContent('contact')">Contact</div>
 		
 	</div>
-	<div class='col2'>
+	<div id='col2'>
 		<!--<div id='ecran'></div> -->
 
 	</div>
@@ -57,12 +57,11 @@ window.onresize = function() {
 };
 */
 
-var col2 = document.getElementsByClassName('col2')[0];
+var col2 = document.getElementById('col2');
 
 
 //Fonction qui load le contenu dans .col2
 function loadContent(content) {
-	
 	var file = content+".html";
 	//col2.innerHTML = '<object type="text/html" data="'+content+'.html"></object>';
 	var requete = new XMLHttpRequest();
@@ -70,19 +69,15 @@ function loadContent(content) {
 	requete.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     requete.overrideMimeType("application/json");
     requete.send();
-    
+
 	requete.onreadystatechange = function () {
 		console.log("load content... "+file);
 		if (requete.readyState == 4 && requete.status == 200) {
-			console.log("readyState: "+requete.readyState);
-			console.log("status: "+requete.status);
 			if (requete.responseText) {
-				console.log(requete.responseText);
 				col2.innerHTML = requete.responseText;
 			}
 		}
 	}
-	
 }
 
 

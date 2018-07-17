@@ -45,14 +45,16 @@ body {
 		text-align: center;
 		height: 100%;
 		line-height: 30px;
+		cursor:pointer;
 
 	}
 
 	.navbar .section:hover {
 		color: grey;
+
 	}
 
-	.col2 {
+	#col2 {
 		position: absolute;
 		top: 30px;
 		width: 100%;
@@ -83,6 +85,7 @@ body {
 		margin-top: 10px;
 		padding: 10px;
 		background-color: #eeeeee;
+		cursor:pointer;
 	}
 
 	.navbar .section:hover {
@@ -90,7 +93,7 @@ body {
 	}
 
 
-	.col2 {
+	#col2 {
 		position: absolute;
 		width: 80%;
 		right: 0%;
