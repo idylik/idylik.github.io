@@ -104,9 +104,12 @@ body {
 }
 
 
-#description {
+#about {
 
 	position: absolute;
-	color: red;
-	background-color: orange;
+	font-size: 20px;
+	width: 80%;
+	height: auto;
+	top: auto;
+	left: auto;
 }
