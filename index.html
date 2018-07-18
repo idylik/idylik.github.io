@@ -58,11 +58,12 @@ window.onresize = function() {
 */
 
 var col2 = document.getElementById('col2');
+loadContent('about');
 
 
 //Fonction qui load le contenu dans .col2
 function loadContent(content) {
-	
+
 	col2.innerHTML = "";
 	var file = content+".html";
 	//col2.innerHTML = '<object type="text/html" data="'+content+'.html"></object>';
