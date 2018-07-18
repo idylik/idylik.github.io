@@ -104,7 +104,7 @@ body {
 }
 
 
-#about {
+.content {
 	position: absolute;
 	font-size: 20px;
 	width: 70%;
