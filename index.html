@@ -66,7 +66,6 @@ function loadContent(content) {
 
 	col2.innerHTML = "";
 	var file = content+".html";
-	//col2.innerHTML = '<object type="text/html" data="'+content+'.html"></object>';
 	var requete = new XMLHttpRequest();
 	requete.open ('GET', file, true);
 	requete.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
