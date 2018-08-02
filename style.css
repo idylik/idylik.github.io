@@ -126,7 +126,7 @@ ul {
 }
 
 iframe {
-	position: absolute;
+	position: relative;
 	width: 448px;
 	height: 252px;
 }
