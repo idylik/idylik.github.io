@@ -66,14 +66,15 @@ function loadContent(content) {
 
 	col2.innerHTML = "";
 	var file = content+".html";
+	var random = Math.trunc(Math.random()*1000);
 	var requete = new XMLHttpRequest();
-	requete.open ('GET', file, true);
+	requete.open ('GET', file+"?v="+random, true);
 	requete.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     requete.overrideMimeType("application/json");
     requete.send();
 
 	requete.onreadystatechange = function () {
-		console.log("load content... "+file);
+		console.log("load content... "+file+"?v="+random);
 		if (requete.readyState == 4 && requete.status == 200) {
 			if (requete.responseText) {
 				col2.innerHTML = requete.responseText;
