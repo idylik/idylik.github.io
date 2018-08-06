@@ -124,6 +124,10 @@ ul {
 	margin: 0;
 }
 
+li:not(:first-child) {
+	margin-left:10px;
+}
+
 iframe {
 	position: relative;
 	width: 448px;
@@ -131,4 +135,17 @@ iframe {
 	left: 50%;
 	transform: translateX(-50%);
 	background: lightgrey;
+}
+
+.content > div {
+	padding: 20px;
+}
+
+.book_img {
+	position: relative;
+	width: 200px;
+	height: auto;
+	left: 50%;
+	transform: translateX(-50%);
+
 }
