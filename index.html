@@ -12,10 +12,10 @@
 	
 <div class="wrapper">
 	<div class='navbar'>
-		<div class="section" onclick="loadContent('about')">About</div>
-		<div class="section" onclick="loadContent('projects')">Projects</div>
-		<div class="section" onclick="loadContent('blog')">Blog</div>
-		<div class="section" onclick="loadContent('contact')">Contact</div>
+		<div class="section" onclick="loadContent('about', this)">About</div>
+		<div class="section" onclick="loadContent('projects', this)">Projects</div>
+		<div class="section" onclick="loadContent('blog', this)">Blog</div>
+		<div class="section" onclick="loadContent('contact',this)">Contact</div>
 		
 	</div>
 	<div id='col2'>
@@ -58,12 +58,17 @@ window.onresize = function() {
 */
 
 var col2 = document.getElementById('col2');
-loadContent('about');
-
+var sectionButtons = document.getElementsByClassName('section');
+loadContent('about', sectionButtons[0]);
 
 //Fonction qui load le contenu dans .col2
-function loadContent(content) {
+function loadContent(content, button) {
 
+	for (var i=0; i < sectionButtons.length; i++) {
+		sectionButtons[i].style.color = 'black';
+	}
+	
+	button.style.color = 'lightgrey';
 	col2.innerHTML = "";
 	var file = content+".html";
 	var random = Math.trunc(Math.random()*1000);
