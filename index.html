@@ -106,19 +106,22 @@ function checkIfVisible() {
 
 	//console.log("on scroll body");
 	//si contient des éléments:
-	if (smoothAppearingElements && smoothAppearingElements.length > 0) {	
+	if (smoothAppearingElements && 
+		smoothAppearingElements.length > 0 && 
+		lastAppeared < smoothAppearingElements.length) {
 		//ajouter à l'élément la classe d'un objet qui apparait à l'écran
 
 		var bottomWindowPixel = window.scrollY + window.innerHeight;
 
 		for (lastAppeared ; lastAppeared < smoothAppearingElements.length; lastAppeared++) {
 			if (bottomWindowPixel > smoothAppearingElements[lastAppeared].offsetTop) {
-				console.log("element: "+lastAppeared);
+				console.log("apparaissant: "+lastAppeared);
 				smoothAppearingElements[lastAppeared].classList.add('appearSmoothly');
 			} else {
-				console.log("return from function");
+				//console.log("return from function");
 				return;
 			}
+			//console.log("after return: "+lastAppeared);
 		}
 
 	}

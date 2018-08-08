@@ -154,12 +154,16 @@ iframe {
 .smooth_appearing > p, 
 .smooth_appearing > iframe,
 .smooth_appearing > h2 {
+	position: relative;
 	opacity: 0;
-	transition: all 3s ease;
+	transition: all 2s ease;
+	padding-top: 10px;
+	display: block;
 
 }
 
 .appearSmoothly {
 	opacity: 1 !important;
+	padding-top: 0px !important;
 	
 }
