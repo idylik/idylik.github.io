@@ -86,6 +86,7 @@ function loadContent(content, button) {
 		if (requete.readyState == 4 && requete.status == 200) {
 			if (requete.responseText) {
 				col2.innerHTML = requete.responseText;
+				lastAppeared = 0;
 				//mettre les éléments à faire apparaître de façon smooth dans un array:
 				smoothAppearingElements = col2.querySelectorAll('div.smooth_appearing > *');
 				checkIfVisible();
@@ -115,7 +116,6 @@ function checkIfVisible() {
 
 		for (lastAppeared ; lastAppeared < smoothAppearingElements.length; lastAppeared++) {
 			if (bottomWindowPixel > smoothAppearingElements[lastAppeared].offsetTop) {
-				console.log("apparaissant: "+lastAppeared);
 				smoothAppearingElements[lastAppeared].classList.add('appearSmoothly');
 			} else {
 				//console.log("return from function");
