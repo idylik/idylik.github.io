@@ -182,19 +182,22 @@ iframe {
 
 .text-copy {
 	fill: none;
-	stroke: black;
-	stroke-dasharray: 7% 28%;
+	stroke: #bfbfbf;
+	stroke-dasharray: 10%;
 	stroke-width: 0.5px;
-	animation: stroke-offset 5s infinite ease;
-	-webkit-animation: stroke-offset 2s infinite ease;
+	animation: stroke-offset 10s infinite linear;
+	-webkit-animation: stroke-offset 10s infinite linear;
+	
 }
 
 .text-copy:nth-child(1) {
-	stroke: #d61c59;
-	stroke-dashoffset: 7%;
+	stroke: #808080;
+	stroke-dashoffset: 10%;
+	animation: stroke2-offset 10s infinite linear;
+	-webkit-animation: stroke2-offset 10s infinite linear;
 	
 	}
-
+/*
 .text-copy:nth-child(2) {
 	stroke: #e7d84b;
 	stroke-dashoffset: 14%;
@@ -223,7 +226,7 @@ stroke-dashoffset: 35%;
 
 @keyframes stroke-offset {
 	0% {
-		stroke-dashoffset: 0%;
+		stroke-dashoffset: 100%;
 	}
 
 	50% {
@@ -232,5 +235,17 @@ stroke-dashoffset: 35%;
 	}
 
 
+} */
+@keyframes stroke-offset {
+	100% {
+		
+		stroke-dashoffset: 100%;
+	}
 }
 
+@keyframes stroke2-offset {
+	100% {
+		
+		stroke-dashoffset: 110%;
+	}
+}
