@@ -182,70 +182,47 @@ iframe {
 
 .text-copy {
 	fill: none;
-	stroke: #bfbfbf;
-	stroke-dasharray: 10%;
+	stroke: #666666;
+	stroke-dasharray: 10% 20%;
 	stroke-width: 0.5px;
-	animation: stroke-offset 10s infinite linear;
-	-webkit-animation: stroke-offset 10s infinite linear;
+	animation: stroke-offset 2s infinite linear;
+	-webkit-animation: stroke-offset 2s infinite linear;
 	
 }
 
 .text-copy:nth-child(1) {
-	stroke: #808080;
+	stroke: #d9d9d9;
 	stroke-dashoffset: 10%;
-	animation: stroke2-offset 10s infinite linear;
-	-webkit-animation: stroke2-offset 10s infinite linear;
-	
-	}
-/*
-.text-copy:nth-child(2) {
-	stroke: #e7d84b;
-	stroke-dashoffset: 14%;
+	animation: stroke2-offset 2s infinite linear;
+	-webkit-animation: stroke2-offset 2s infinite linear;
 	
 	}
 
-.text-copy:nth-child(3) {
-	stroke: #1b8798;
-	stroke-dashoffset: 21%;
+	.text-copy:nth-child(2) {
+	stroke: #8c8c8c;
+	stroke-dashoffset: 20%;
+	animation: stroke3-offset 2s infinite linear;
+	-webkit-animation: stroke3-offset 2s infinite linear;
 	
 	}
 
-.text-copy:nth-child(4) {
-stroke: #efeac5;
-stroke-dashoffset: 28%;
-
-}
-
-
-.text-copy:nth-child(5) {
-stroke: #1b8798;
-stroke-dashoffset: 35%;
-
-}
-
-
-@keyframes stroke-offset {
-	0% {
-		stroke-dashoffset: 100%;
-	}
-
-	50% {
-		stroke-dashoffset: 50%;
-		
-	}
-
-
-} */
 @keyframes stroke-offset {
 	100% {
 		
-		stroke-dashoffset: 100%;
+		stroke-dashoffset: 30%;
 	}
 }
 
 @keyframes stroke2-offset {
 	100% {
 		
-		stroke-dashoffset: 110%;
+		stroke-dashoffset: 40%;
+	}
+}
+
+@keyframes stroke3-offset {
+	100% {
+		
+		stroke-dashoffset: 50%;
 	}
 }
