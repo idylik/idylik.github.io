@@ -183,10 +183,10 @@ iframe {
 .text-copy {
 	fill: none;
 	stroke: white;
-	stroke-dasharray: 10% 20%;
+	stroke-dasharray: 0% 30%;
 	stroke-width: 0.5px;
-	animation: stroke-offset 3s infinite linear forwards;
-	-webkit-animation: stroke-offset 3s infinite linear forwards;
+	animation: stroke-offset 1s infinite ease forwards;
+	-webkit-animation: stroke-offset 1s infinite ease forwards;
 	animation-iteration-count: 1;
 	animation-delay: 0s;
 	
@@ -195,43 +195,46 @@ iframe {
 .text-copy:nth-child(1) {
 	stroke: white;
 	stroke-dashoffset: 10%;
-	animation: stroke2-offset 3s infinite linear forwards;
-	-webkit-animation: stroke2-offset 3s infinite linear forwards;
+	animation: stroke2-offset 1s infinite ease forwards;
+	-webkit-animation: stroke2-offset 1s infinite ease forwards;
 	animation-iteration-count: 1;
-	animation-delay: 6s;
+	animation-delay: 2s;
 	
 	}
 
 	.text-copy:nth-child(2) {
 	stroke: white;
 	stroke-dashoffset: 20%;
-	animation: stroke3-offset 3s infinite linear forwards;
-	-webkit-animation: stroke3-offset 3s infinite linear forwards;
+	animation: stroke3-offset 1s infinite ease forwards;
+	-webkit-animation: stroke3-offset 1s infinite ease forwards;
 	animation-iteration-count: 1;
-	animation-delay: 3s;
+	animation-delay: 1s;
 	
 	}
 
 @keyframes stroke-offset {
 	100% {
 		
+		stroke-dasharray: 10% 20%;
 		stroke-dashoffset: 30%;
-		stroke: #666666;
+		stroke: #a6a6a6;
 	}
 }
 
 @keyframes stroke2-offset {
 	100% {
 		
+		stroke-dasharray: 10% 20%;
+		stroke: #a6a6a6;
 		stroke-dashoffset: 40%;
-		stroke: #666666;
 	}
 }
 
 @keyframes stroke3-offset {
 	100% {
 		
+		stroke-dasharray: 10% 20%;
+		stroke: #a6a6a6;
 		stroke-dashoffset: 50%;
-		stroke: #666666;
 	}
 }
