@@ -173,8 +173,22 @@ iframe {
 /* SVG */
 
 #logo {
-		
+	
 }
+
+#chemin {
+
+
+}
+
+
+@keyframes avancer {
+	100% {
+		start
+	}
+
+}
+
 
 .text--line {
 	font-size: 1em
@@ -182,53 +196,54 @@ iframe {
 
 .text-copy {
 	fill: none;
-	stroke: white;
+	stroke: red;
 	stroke-dasharray: 0% 30%;
 	stroke-width: 0.1px;
-	animation: stroke-offset 1s infinite ease forwards;
-	-webkit-animation: stroke-offset 1s infinite ease forwards;
+	animation: stroke-offset 1s infinite linear forwards;
+	-webkit-animation: stroke-offset 1s infinite linear forwards;
 	animation-iteration-count: 1;
 	animation-delay: 0s;
 	
 }
 
 .text-copy:nth-child(1) {
-	stroke: white;
+	stroke: green;
 	stroke-dashoffset: 10%;
-	animation: stroke2-offset 1s infinite ease forwards;
-	-webkit-animation: stroke2-offset 1s infinite ease forwards;
-	animation-iteration-count: 1;
-	animation-delay: 2s;
-	
-	}
-
-	.text-copy:nth-child(2) {
-	stroke: white;
-	stroke-dashoffset: 20%;
-	animation: stroke3-offset 1s infinite ease forwards;
-	-webkit-animation: stroke3-offset 1s infinite ease forwards;
+	animation: stroke2-offset 1s infinite linear forwards;
+	-webkit-animation: stroke2-offset 1s infinite linear forwards;
 	animation-iteration-count: 1;
 	animation-delay: 1s;
 	
 	}
 
-/*
+	.text-copy:nth-child(2) {
+	stroke: blue;
+	stroke-dashoffset: 20%;
+	animation: stroke3-offset 1s infinite linear forwards;
+	-webkit-animation: stroke3-offset 1s infinite linear forwards;
+	animation-iteration-count: 1;
+	animation-delay: 0.5s;
+	
+	}
+
+
 .text-copy:nth-child(4) {
-	stroke: none;
-	fill: white;
-	animation: interieur 5s infinite ease forwards;
-	-webkit-animation: interieur 5s infinite ease forwards;
+	stroke: transparent;
+	fill: transparent;
+	animation: interieur 3s infinite linear forwards;
+	-webkit-animation: interieur 3s infinite linear forwards;
 	animation-delay: 3s;
 	animation-iteration-count: 1;
+	z-index: -5;
 
-}*/
+}
 
 @keyframes stroke-offset {
 	100% {
 		
 		stroke-dasharray: 10% 20%;
 		stroke-dashoffset: 30%;
-		stroke: #a6a6a6;
+		stroke: #999999;
 	}
 }
 
@@ -236,7 +251,7 @@ iframe {
 	100% {
 		
 		stroke-dasharray: 10% 20%;
-		stroke: #a6a6a6;
+		stroke: #999999;
 		stroke-dashoffset: 40%;
 	}
 }
@@ -245,7 +260,7 @@ iframe {
 	100% {
 		
 		stroke-dasharray: 10% 20%;
-		stroke: #a6a6a6;
+		stroke: #999999;
 		stroke-dashoffset: 50%;
 	}
 }
@@ -254,6 +269,7 @@ iframe {
 @keyframes interieur {
 	100% {
 		
-		fill: #d9d9d9;
+		fill: #f2f2f2;
 	}
-}
+} 
+
