@@ -130,6 +130,7 @@ body {
 	left: 0;
 	text-align: justify;
     text-justify: inter-word;
+    font-family: Baskerville;
 }
 
 ul {
@@ -138,13 +139,10 @@ ul {
 	margin: 0;
 }
 
-li:not(:first-child) {
+ul li:not(:first-child) {
 	margin-left:10px;
 }
 
-#education {
-
-}
 
 hr {
 	width: 60%;
@@ -190,7 +188,16 @@ iframe {
 	
 }
 
-
+#education .degree {
+	font-variant: small-caps;
+}
+#education .university {
+	font-size: 18px;
+}
+#education .description {
+	font-size: 16px;
+	font-style: italic;
+}
 
 /* SVG */
 
