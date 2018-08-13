@@ -65,12 +65,31 @@ body {
 	#col2 {
 		position: absolute;
 		top: 30px;
-		width: 100%;
+		width: 95%;
+		padding-left: 5px;
+		padding-right: 5px;
 		background-color: white;
 		height: auto;
 		color: #999999;
+		right: 0;
+		left: 0;
 
 	}
+
+	.content {
+		position: absolute;
+		font-size: 20px;
+		width: 90%;
+		height: auto;
+		display: block;
+		margin: auto;
+		top: 50px;
+		right: 0;
+		left: 0;
+		text-align: justify;
+	    text-justify: inter-word;
+	    font-family: Baskerville;
+}
 
 		#logo {
 				display:none;
@@ -117,12 +136,11 @@ body {
 
 	#col2 {
 		position: absolute;
-		min-width: 80%;
+		min-width: 76%;
 		right: 0;
 		background-color: white;
 		color: #737373;
 	}
-
 }
 
 
@@ -303,7 +321,7 @@ iframe {
 @keyframes interieur {
 	100% {
 		
-		fill: #f2f2f2;
+		fill: #f5f5f5;
 	}
 } 
 
