@@ -70,7 +70,7 @@ body {
 		padding-right: 5px;
 		background-color: white;
 		height: auto;
-		color: #999999;
+		color: #737373;
 		right: 0;
 		left: 0;
 
@@ -178,6 +178,7 @@ hr {
 iframe {
 	position: relative;
 	width: 448px;
+	max-width: 95%;
 	height: 252px;
 	left: 50%;
 	transform: translateX(-50%) !important;
