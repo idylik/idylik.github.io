@@ -15,7 +15,7 @@ body {
 
 #wrapper {
 	position: absolute;
-	width: 90%;
+	
 	height: 100%;
 	max-width: 1600px;
 	display: inline-block;
@@ -31,6 +31,10 @@ body {
 
 /* Tablette et mobile */
 @media only screen and (max-width: 768px) {
+	#wrapper {
+		width: 100%;
+	}
+
 	#navbar {
 		position: fixed;
 		height: 30px;
@@ -39,6 +43,7 @@ body {
 		grid-template-columns: repeat(4, 1fr);
 		z-index: 10;
 		grid-gap: 3px;
+		background-color: #dddddd;
 	}
 
 	#navbar .section {
@@ -72,8 +77,12 @@ body {
 		}
 }
 
-/* Ordinateur */
+/* Écran d'Ordinateur */
 @media only screen and (min-width:769px) {
+
+	#wrapper {
+		width: 90%;
+	}
 
 	#navbar {
 		position: fixed;
@@ -190,6 +199,8 @@ iframe {
 
 #education .degree {
 	font-variant: small-caps;
+	font-family: Bodoni;
+
 }
 #education .university {
 	font-size: 18px;
