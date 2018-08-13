@@ -10,8 +10,8 @@
 
 <body>
 	
-<div class="wrapper">
-	<div class='navbar'>
+<div id="wrapper">
+	<div id='navbar'>
 		<div id='logo'>
 
 <!--
@@ -29,12 +29,9 @@
 
 				</text>
 
--->
+
 			</svg>
-
-
-
-		
+		-->
 					<svg viewBox="0 0 70 40">
 					  <symbol id="s-text">
 					    <text text-anchor="middle"
@@ -72,12 +69,13 @@
 					</svg>
 
 		</div>
-		<div class="section" onclick="loadContent('about', this)">About</div>
-		<div class="section" onclick="loadContent('projects', this)">Projects</div>
-		<div class="section" onclick="loadContent('blog', this)">Blog</div>
-		<div class="section" onclick="loadContent('contact',this)">Contact</div>
+		<div class="section" onclick="loadContent('about', this)"><span>About</span></div>
+		<div class="section" onclick="loadContent('projects', this)"><span>Projects</span></div>
+		<div class="section" onclick="loadContent('blog', this)"><span>Blog</span></div>
+		<div class="section" onclick="loadContent('contact',this)"><span>Contact</span></div>
 		
 	</div>
+
 	<div id='col2'>
 		<!--<div id='ecran'></div> -->
 
@@ -90,32 +88,14 @@
 
 
 
-</div>
+
 
 
 </body>
 
 
 <script>
-/*	
-var ecran = document.getElementById('ecran');
 
-var calcScreen = function() {
-	ecran.innerHTML = 
-	"Scr W: "+window.screen.width+" px<br>"+
-	"Win W "+window.innerWidth+" px<br>"+
-	"Scr H: "+window.screen.height+	" px<br>"+
-	"Win H: "+window.innerHeight+" px<br>"+
-	"...";
-
-}
-
-calcScreen();
-
-window.onresize = function() {
-	calcScreen();
-};
-*/
 
 var col2 = document.getElementById('col2');
 var body = document.getElementsByTagName('body')[0];
@@ -132,7 +112,7 @@ function loadContent(content, button) {
 	}
 	
 	button.style.color = 'darkgrey';
-	col2.innerHTML = "";
+	//col2.innerHTML = "";
 	var file = content+".html";
 	var random = Math.trunc(Math.random()*1000);
 	var requete = new XMLHttpRequest();
